@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 *{
     margin: 0px;
 
@@ -57,9 +62,9 @@ a{
     border: 0px;
     text-decoration: none;
 }
-.navdrop:hover>.navdroplst{
+/* .navdrop:hover>.navdroplst{
     background-color: #ffd747;
-}
+} */
 
 
 
@@ -1221,7 +1226,6 @@ display: flex;
     .menu{
         padding-top: 20px;
         justify-content: flex-start;
-        width: 100vw;
     }
     .chldmenu{
         width: 75px;
