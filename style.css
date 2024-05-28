@@ -38,33 +38,52 @@ a{
 }
 .chldmenu{
     font-weight: lighter;
-    height: 80px;
+    height: 70px;
     width: 117px;
     font-size: 20px;
     padding-top: 25px;
     text-align: center;
+    position: relative;
+    color: darkgray;
 }
 .chldmenu:hover{
     background-color: #ffd747;
 }
 .navdroplst{
     border: 0px;
-    margin: 0px;
+    margin-top: 0px;
+    align-content: center;
     padding: 0px;
-    width: 20px;
-    height: 16px;
+    border: 1px solid whitesmoke;
+    width: 100%;
+    height: 15px;
     color: #6c757d;
     text-decoration: none;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 80px;
+
+}
+.navdrop:hover .navdroplst{
+    display: block;
+    background-color:#dadce1;
 }
 .navoption{
-    width: 117px;
-    height: 60px;
+    width:100%;
+    height:50px;
     border: 0px;
     text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+
+
 }
-/* .navdrop:hover>.navdroplst{
-    background-color: #ffd747;
-} */
+.navoption:hover{
+    background-color: #f1c40f;
+}
+
 
 
 
@@ -835,8 +854,9 @@ display: flex;
     background-size: cover;
     height: 20px;
     width: 20px;
+    margin-bottom: 20px;
 }
-.mapimg{
+/* .mapimg{
     background-image: url(./mapimg.png);
     background-position: center;
     background-size: cover;
@@ -844,7 +864,7 @@ display: flex;
     width: 430px;
     margin-top: 20px;
     border-radius: 20px;
-}
+} */
 
 .footer{
     background-color: #36363e;
@@ -1230,6 +1250,8 @@ display: flex;
     .chldmenu{
         width: 75px;
         font-size: 10px;
+        height: 51px;
+        margin-top: -47px;
     }
     .brand{
         width: 150px;
@@ -1424,15 +1446,17 @@ display: flex;
         align-items: baseline;
 
     }
-    .mapimg{
+    /* .mapimg{
         width: 300px;
         height: 200px;
         background-size: contain;
         background-repeat: no-repeat;
-    }
+    } */
+   
+
     .blckwavyimg{
         width: 100vw;
-        height: 144px;
+        height: 150px;
         margin-bottom: -5px;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1481,10 +1505,8 @@ display: flex;
     .productdtls{
         width: 100vw;
         height: 391px;
-        /* background-size: contain; */
         background-position: right;
         background-repeat: no-repeat;
-        /* align-content: start; */
         padding: 0px 20px;
     }
     .productdtlsheading{
@@ -1507,6 +1529,9 @@ display: flex;
         text-align: left;
         width: 100vw;
         gap: 20px;
+    }
+    .detailsbar2{
+        padding-left: 20px;
     }
     .dtlshead{
         width: 100vw;
@@ -1554,4 +1579,62 @@ display: flex;
         width:  100vw;
         padding: 20px;
     }
+
+
+
+
+
+
+
+
+
+
+    .listingbody{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .listingform{
+        width: 88vw;
+    }
+
+
+
+
+
+
+
+
+    .gmap_canvas{
+        width: 300px;
+        height: 200px;
+    }
+    .mapalarm{
+        display: none;
+     }
+    .mapouter{
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        overflow: hidden;
+    }
+    /* iframe{
+        width: 300px;
+        height: 200px;
+        margin-left: -20px;
+    } */
+}
+
+
+.mapouter{
+    position: relative;
+    text-align: right;
+    height: 230px;
+    width: 430px;
+}
+.gmap_canvas{
+    margin-top: 20px;
+    overflow: hidden;
+    background: none !important;
+    height: 230px;
+    width: 430px;
 }
